@@ -11,10 +11,6 @@ class IntegerType(DataType):
         open(path, 'w').write(str(integer))
 
     @classmethod
-    def load(Class, path):
-        return Class.parse(open(path).read())
-
-    @classmethod
     def parse(Class, text):
         try:
             integer = int(text)
