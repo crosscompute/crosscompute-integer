@@ -11,9 +11,9 @@ class IntegerType(DataType):
         open(path, 'w').write(str(integer))
 
     @classmethod
-    def parse(Class, text):
+    def parse(Class, x, default_value=None):
         try:
-            integer = int(text)
+            integer = int(x)
         except (TypeError, ValueError):
             raise DataTypeError('expected integer')
         return integer
