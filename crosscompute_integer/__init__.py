@@ -5,6 +5,7 @@ class IntegerType(DataType):
     suffixes = 'integer', 'int', 'count'
     formats = 'txt',
     template = 'crosscompute_integer:type.jinja2'
+    requires_value_for_path = False
 
     @classmethod
     def save(Class, path, integer):
