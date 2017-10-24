@@ -16,7 +16,7 @@ def test_bad_input(tmpdir):
 def test_good_input(tmpdir):
     args = str(tmpdir), 'load-integer', {'x_integer': 2}
     r = run(*args)
-    r['standard_outputs']['y_integer'] == 4
+    r['raw_outputs']['y_integer'] == 4
 
 
 if __name__ == '__main__':
