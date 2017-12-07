@@ -16,7 +16,7 @@ class IntegerType(DataType):
         try:
             integer = int(x)
         except (TypeError, ValueError):
-            raise DataTypeError('expected integer')
+            raise DataTypeError('integer expected')
         return integer
 
     @classmethod
